@@ -19,9 +19,9 @@ for i in range(t+1):                                  # Generating T Fibonacci N
         if(isPrime(q)):                               # Checks if the Generated Fib.No is Prime
             print("BuzzFizz")
         elif ((q%3)==0)&((q%5)!=0):                   # Check if Divisible by 3 and Not by 5
-            print("Fizz")
+            print("Buzz")
         elif ((q%5)==0)&((q%15)!=0):                  # Check if Divisible by 5 and Not by 15
-            print("Bizz")
+            print("Fizz")
         elif (q%15==0):                               # Check if divisible by 15
             print("FizzBuzz")
         else:                                         # If Not Prime Number and Not Divisible by 3,5,15
