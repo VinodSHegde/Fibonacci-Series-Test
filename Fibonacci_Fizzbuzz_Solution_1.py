@@ -17,7 +17,7 @@ for i in range(t+1):                                  # Generating T Fibonacci N
     q=int((1/a)*((math.pow(b,i))-(math.pow(c,i))))    # Calculating Fibonacci Number at i
     if q>1:
         if(isPrime(q)):                               # Checks if the Generated Fib.No is Prime
-            print("BuzzFizz")
+            print("BuzzFizz",end=" ")
         elif ((q%3)==0)|((q%5)==0):
             if((q%5)==0):
                 print("Fizz",end="")
@@ -25,6 +25,6 @@ for i in range(t+1):                                  # Generating T Fibonacci N
                 print ("Buzz", end=""),
             print("",end=" ")
         else:                                         # If Not Prime Number and Not Divisible by 3,5,15
-            print("%d"%q)
+            print("%d"%q,end=" ")
     else:                                             # To generate initial 3 Fibonacci Numbers to ease further process
-        print("%d"%q)
+        print("%d"%q,end=" ")
