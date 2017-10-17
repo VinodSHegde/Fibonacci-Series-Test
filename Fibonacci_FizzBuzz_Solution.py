@@ -9,22 +9,22 @@ def isPrime(n):
 # MATH Function for calculation   
 
 import math 
-t=int(input())                                              # Read User input for getting the range of series to be generated
+t=int(input())                                        # Read User input for getting the range of series to be generated
 a=math.sqrt(5)
-for i in range(t+1):                                        # Generating T Fibonacci Number Series
-    b=(1+a)/2                                               # To assist calculating Fibonacci Series
-    c=(1-a)/2                                               # To assist Calculating Fibonacci Series 
-    q=int((1/a)*((math.pow(b,i))-(math.pow(c,i))))          # Calculating Fibonacci Number at i
+for i in range(t+1):                                  # Generating T Fibonacci Number Series
+    b=(1+a)/2                                         # To assist calculating Fibonacci Series
+    c=(1-a)/2                                         # To assist Calculating Fibonacci Series 
+    q=int((1/a)*((math.pow(b,i))-(math.pow(c,i))))    # Calculating Fibonacci Number at i
     if q>1:
-        if(isPrime(q)):                                     # Checks if the Generated Fib.No is Prime
+        if(isPrime(q)):                               # Checks if the Generated Fib.No is Prime
             print("BuzzFizz")
-        elif ((q%3)==0)&((q%5)!=0):                         # Check if Divisible by 3 and Not by 5
+        elif ((q%3)==0)&((q%5)!=0):                   # Check if Divisible by 3 and Not by 5
             print("Fizz")
-        elif ((q%5)==0)&((q%15)!=0):                        # Check if Divisible by 5 and Not by 15
+        elif ((q%5)==0)&((q%15)!=0):                  # Check if Divisible by 5 and Not by 15
             print("Bizz")
-        elif (q%15==0):                                     # Check if divisible by 15
+        elif (q%15==0):                               # Check if divisible by 15
             print("FizzBuzz")
-        else:                                               # If Not Prime Number and Not Divisible by 3,5,15
+        else:                                         # If Not Prime Number and Not Divisible by 3,5,15
             print("%d"%q)
-    else:                                                   # To generate initial 3 Fibonacci Numbers to ease further process
+    else:                                             # To generate initial 3 Fibonacci Numbers to ease further process
         print("%d"%q)
